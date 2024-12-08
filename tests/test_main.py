@@ -37,4 +37,4 @@ def test_invalid_questions(invalid_question):
     with pytest.raises(ValueError) as exc_info:
         get_meaning_of_life(invalid_question)
 
-    assert str(exc_info.value) == "Question not deep enough 🧠"
+    assert str(exc_info.value) == "Question not deep enough"

@@ -1,3 +1,4 @@
+import argparse
 from typing import Union
 
 from .utils import logger
@@ -12,14 +13,23 @@ def get_meaning_of_life(question: str) -> Union[int, str]:
     Returns:
         42 if the question is about life, error message otherwise
     """
-    logger.glitch(f"Reflecting on question: {question}")
-
     if "life" in question.lower():
         return 42
 
-    raise ValueError("Question not deep enough 🧠")
+    raise ValueError("Question not deep enough")
 
 
 if __name__ == "__main__":
-    result = get_meaning_of_life("What is the meaning of life?")
+    parser = argparse.ArgumentParser(description="Get the meaning of life")
+    parser.add_argument(
+        "-q",
+        "--question",
+        type=str,
+        default="What is the meaning of life?",
+        help="An existential question",
+    )
+    args = parser.parse_args()
+
+    logger.glitch(f"Reflecting on question 🧠: {args.question}")
+    result = get_meaning_of_life(args.question)
     logger.success(f"The answer is {result}")
