@@ -8,6 +8,10 @@
 
 ## Project Title
 
+![Test Status](https://img.shields.io/github/workflow/status/Segolene-Albouy/python-project-template/Tests)
+
+[//]: # (![Test Status]&#40;https://img.shields.io/github/workflow/status/<username>/<repo>/Tests&#41;)
+
 A brief description of what the project does and its purpose.
 
 > **Table of Contents**
