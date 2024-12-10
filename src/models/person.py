@@ -42,11 +42,11 @@ class Person:
                 "Input string must be in the format 'Firstname Name YYYY-MM-DD City'"
             )
 
-    @staticmethod
-    def is_adult(age: int) -> bool:
+    def is_adult(self) -> bool:
         """
         Static method to determine if a given age qualifies as an adult.
         """
+        age = self.age
         if age < 0:
             raise ValueError("Age cannot be negative.")
         return age >= 18

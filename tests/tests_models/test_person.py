@@ -5,11 +5,6 @@ import pytest
 # from src.models.person import Person
 
 
-def test_age(adult):
-    """Test that the age property is calculated correctly"""
-    # TODO: Calculate expected age and verify adult.age equals this value
-
-
 def test_is_adult(adult, minor):
     """Test that the is_adult static method works as expected"""
     # TODO: Test both adult and minor ages with Person.is_adult()
@@ -104,3 +99,8 @@ def test_sort_empty_list():
 def test_sort_single_person():
     """Test sorting a list with single person"""
     # TODO: Try sorting list with one person
+
+
+def test_age(adult):
+    """Test that the age property is calculated correctly"""
+    # TODO: Calculate expected age and verify adult.age equals this value
