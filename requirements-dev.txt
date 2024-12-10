@@ -1,0 +1,5 @@
+tqdm
+pytest
+pre-commit
+pytest
+pytest-cov
