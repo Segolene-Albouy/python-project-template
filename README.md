@@ -8,9 +8,9 @@
 
 ## Project Title
 
-![Test Status](https://img.shields.io/github/workflow/status/Segolene-Albouy/python-project-template/Tests)
+![Test Status](https://img.shields.io/github/actions/workflow/status/Segolene-Albouy/python-project-template/test.yml?branch=main)
 
-[//]: # (![Test Status]&#40;https://img.shields.io/github/workflow/status/<username>/<repo>/Tests&#41;)
+[//]: # (![Test Status]&#40;https://img.shields.io/github/actions/workflow/status/<user>/<repo>/test.yml?branch=main&#41;)
 
 A brief description of what the project does and its purpose.
 
