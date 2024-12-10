@@ -1,7 +1,7 @@
 import argparse
 from typing import Union
 
-from .utils import logger
+from src.utils import logger
 
 
 def get_meaning_of_life(question: str) -> Union[int, str]:

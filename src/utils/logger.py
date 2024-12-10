@@ -211,7 +211,7 @@ class Logger:
 
     @staticmethod
     def stdout(txt: str):
-        """Write text to stdout without newline."""
+        """Print text to stdout without newline at the end."""
         sys.stdout.write(txt)
         sys.stdout.flush()
 
