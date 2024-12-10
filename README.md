@@ -1,7 +1,9 @@
 # Python project template
 
 > This repository is a template for Python projects.
+>
 > It includes a basic structure and files to get started with a new project with linting and testing.
+>
 > The following README gives template instructions for setting up the project.
 
 ## Project Title
@@ -42,6 +44,7 @@ Step-by-step instructions on how to install the project and its dependencies.
 3. Install dependencies:
     ```bash
     pip install -r requirements.txt
+    pip install -r requirements-dev.txt
     pre-commit install
     ```
 4. Run the project:
