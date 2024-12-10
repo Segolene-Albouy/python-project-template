@@ -3,9 +3,11 @@ import pytest
 from src.utils.utils import fetch_text
 
 
-def test_fetch_text_success():
-    url = "https://example.com"
-    expected_content = "Example Domain"
+@pytest.mark.parametrize(
+    "url,expected_content",
+    [("https://example.com", "Example Domain"), ("https://google.com", "Google")],
+)
+def test_fetch_text_success(url, expected_content):
     assert expected_content in fetch_text(url)
 
 
